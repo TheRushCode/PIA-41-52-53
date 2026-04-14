@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buyer Dashboard</title>
+</head>
+<body>
+
+<h1>🛒 Buyer Dashboard</h1>
+
+<script src="js/auth.js"></script>
+<script>
+    requireAuth("buyer");
+</script>
+
+</body>
+</html>
+
+
+
+<button onclick="logout()">Logout</button>
+
+<script>
+function logout() {
+    localStorage.clear();
+    window.location.href = "login.html";
+}
+</script>
